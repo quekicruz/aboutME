@@ -10,7 +10,7 @@ header {
   
   body {
   background-color: rgb(53, 104, 245);
-  /* box-sizing: border-box; */ 
+  box-sizing: border-box;
   }
   
   p {
