@@ -1,8 +1,10 @@
+'use strict'
+
 let userName = prompt('Hafa Adai, What is your name?')
 //  console.log('Great to meet you '+ userName)
 alert ('Welcome to Me'+ ' ' + userName + '!')
 
-alert('Before you learn more about me, I have prepared a little guessing game to allow you for some fun. Please answer yes or no to the following questions')
+alert('Before you learn more about me, I have prepared a little guessing game to allow you for some fun. Please answer Yes or No to the following questions')
 
 let island = prompt('Am I from Guam?')
 if(island === 'yes'|| island === 'Yes') {
@@ -12,7 +14,7 @@ if(island === 'yes'|| island === 'Yes') {
   alert('Ahhhh better luck next time!')
 }
 
-let degree = prompt('Did I Study business?')
+let degree = prompt('Did I study business?')
 if(degree === 'no'|| degree === 'No') {
   alert('Yup, I could never.')
   // console.log('Business is not for everyone')
