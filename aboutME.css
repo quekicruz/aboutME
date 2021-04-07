@@ -9,12 +9,12 @@ header {
   }
   
   body {
-  background-color: rgb(53, 104, 245);
+  background-color:#E8B454;
   box-sizing: border-box;
   }
   
   p {
-  color: whitesmoke ;
+  color: #CEE854 ;
   }
   
   h1 {
@@ -24,4 +24,15 @@ header {
   h2 {
   font-size: 1.5em;
   
+  }
+
+  #topten li {
+    font-size: 60 em;
+    color: azure;
+    inline-size: 22em;
+  }
+
+  #topten h3 {
+    color: azure;
+
   }
