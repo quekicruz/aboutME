@@ -8,5 +8,6 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Links and Resources
 
+Keian Anthony was the driver for functions of my code and assisted in making my code run smoother (4/8/2021)
 
 ### Reflections and Comments
