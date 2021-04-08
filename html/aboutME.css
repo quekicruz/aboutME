@@ -1,0 +1,59 @@
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  background-color:#FFFFFF ;
+  border:turquoise 5px;
+  margin: 10px;
+  padding: 10px;
+  }
+  
+  body {
+  background-color: #164A41;
+  box-sizing: border-box;
+  }
+
+  
+  p {
+  color: #FFFFFF ;
+  }
+  
+  h1 {
+  /* font-size: 2em; */
+  }
+  
+  h2 {
+  font-size: 1.5em;
+  
+  }
+
+
+  #intro {
+  }
+
+  #topten li {
+    font-size: 60 em;
+    color: #FFFFFF;
+    inline-size: 22em;
+  }
+
+  #topten h3 {
+    color:#FFFFFF ;
+
+  }
+
+  #education li{
+    color: #FFFFFF;
+  }
+
+  #education h4{
+    color: #FFFFFF;
+  }
+
+  #workhistory li{
+    color: #FFFFFF;
+  }
+
+  #workhistory h4{
+    color: #FFFFFF;
+  }
