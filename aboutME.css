@@ -2,19 +2,19 @@
 header {
   text-align: center;
   text-transform: uppercase;
-  background-color: rgb(127, 255, 249);
+  background-color:#FFFFFF ;
   border:turquoise 5px;
   margin: 10px;
   padding: 10px;
   }
   
   body {
-  background-color:#E8B454;
+  background-color: #164A41;
   box-sizing: border-box;
   }
   
   p {
-  color: #CEE854 ;
+  color: #FFFFFF ;
   }
   
   h1 {
@@ -28,11 +28,27 @@ header {
 
   #topten li {
     font-size: 60 em;
-    color: azure;
+    color: #FFFFFF;
     inline-size: 22em;
   }
 
   #topten h3 {
-    color: azure;
+    color:#FFFFFF ;
 
+  }
+
+  #education li{
+    color: #FFFFFF;
+  }
+
+  #education h4{
+    color: #FFFFFF;
+  }
+
+  #workhistory li{
+    color: #FFFFFF;
+  }
+
+  #workhistory h4{
+    color: #FFFFFF;
   }

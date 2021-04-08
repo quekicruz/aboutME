@@ -1,63 +1,83 @@
-'use strict'
+'use strict;'
 
-let userName = prompt('Hafa Adai, What is your name?')
-//  console.log('Great to meet you '+ userName)
-alert ('Welcome to Me'+ ' ' + userName + '!')
+function getUserName() {
+  // prompts user for userName and introduces user to site 
+  let userName = prompt('Hafa Adai, What is your name?')
+  //  console.log('Great to meet you '+ userName)
+  while (userName === '' || userName === null) {
+    alert ('Is that really your name?')}
+  return userName
+}
 
+
+function welcomeUserName() {
+  alert (`Welcome to Me ${userNameName}!`);
+}
+
+function thatsWeird(){
+  alert ('Thats a weird response??')
+}
+
+// alert to begin guessing game
 alert('Before you learn more about me, I have prepared a little guessing game to allow for some fun. Please answer Yes or No to the following questions')
 
+function userQuestions() {
 // 1st Question
-let island = prompt('Am I from Guam?')
-if(island === 'yes'|| island === 'Yes') {
-  alert('Wow! How did you know that?')
-  // console.log('Guam will always have my heart!')
-}else{
-  alert('Ahhhh better luck next time!')
-}
+  let island = prompt('Am I from Guam?')
+  if(island === 'yes'|| island === 'Yes') {
+    alert('Wow! How did you know that?')
+    // console.log('Guam will always have my heart!')
+  }
+  if(island === 'no' || island === 'No'){
+    alert('Ahhhh better luck next time!')
+  }else{
+    thatsWeird()
+  }
 
-// 2nd Question
-let degree = prompt('Did I study business?')
-if(degree === 'no'|| degree === 'No') {
-  alert('Yup, I could never.')
-  // console.log('Business is not for everyone')
-}else{
-  alert('Wow, I appreciate that you think that')
-}
+  // 2nd Question
+  let degree = prompt('Did I study business?')
+  if(degree === 'no'|| degree === 'No') {
+    alert('Yup, I could never.')
+    // console.log('Business is not for everyone')
+  }else{
+    alert('Wow, I appreciate that you think that')
+  }
 
-// 3rd Question
-let profession = prompt('Was I a personal trainer?')
-if(profession === 'yes'|| profession === 'Yes') {
-  alert('You rock! I love me some good exercise')
-  // console.log('Being a personal trainer was a lot of fun')
-}else{
-  alert('But I love me some exercise though :/')
-}
+  // 3rd Question
+  let profession = prompt('Was I a personal trainer?')
+  if(profession === 'yes'|| profession === 'Yes') {
+    alert('You rock! I love me some good exercise')
+    // console.log('Being a personal trainer was a lot of fun')
+  }else{
+    alert('But I love me some exercise though :/')
+  }
 
-// 4th Question
-let sibling = prompt('Do I have a sister?')
-if(sibling === 'yes'|| sibling === 'Yes') {
-  alert('She is still the one that bullies me til this day.')
-  // console.log('Its love/hate relationship with us two')
-}else{
-  alert('I mean you could not have known that')
-}
+  // 4th Question
+  let sibling = prompt('Do I have a sister?')
+  if(sibling === 'yes'|| sibling === 'Yes') {
+    alert('She is still the one that bullies me til this day.')
+    // console.log('Its love/hate relationship with us two')
+  }else{
+    alert('I mean you could not have known that')
+  }
 
-// 5th Question
-let team = prompt('Am I Lakers fan?')
-if(team === 'no'|| team === 'No') {
-  alert('That is right! Clippers fan for life!')
-  // console.log('Lakers are the worst smh')
-}else{
-  alert('Sheesh you do not know me, do you?')
-}
+  // 5th Question
+  let team = prompt('Am I Lakers fan?')
+  if(team === 'no'|| team === 'No') {
+    alert('That is right! Clippers fan for life!')
+    // console.log('Lakers are the worst smh')
+  }else{
+    alert('Sheesh you do not know me, do you?')
+  }
 
+}
 
 // Guess number game
 
   let gameAnswer = prompt('Would you like to play a number guessing game with me?')
   if (gameAnswer.toLowerCase() == 'yes'){
       guess()}else{
-        alert('Ahhh that is alright! Enjoy the site ' + userName + '!');
+        alert('Ahhh that is alright! Enjoy the site ' + userNameName + '!');
 
       }
 
@@ -172,3 +192,6 @@ while (travelGuesses > 0 && correctTravelGuess === false) {
 
 // let degree = prompt('What did I get my degree in?')
 
+// let userNameName = getUserName();
+
+// welcomeUserName();
