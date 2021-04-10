@@ -3,52 +3,170 @@ header {
   text-align: center;
   text-transform: uppercase;
   background-color:#FFFFFF ;
-  border:turquoise 5px;
-  margin: 10px;
-  padding: 10px;
+  border:turquoise 10px;
+  margin: 13%;
+  padding: 13%;
   }
   
   body {
   background-color: #164A41;
   box-sizing: border-box;
   }
+
   
-  p {
-  color: #FFFFFF ;
-  }
   
   h1 {
-  /* font-size: 2em; */
+    /* font-size: 2em; */
   }
   
   h2 {
-  font-size: 1.5em;
+    font-size: 1.5em;
+    
+  }
   
+  
+  #intro p {
+    color: #FFFFFF ;
+    font-size: 160%;
+    height: 400%;
+    padding-top: 15%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+     width: 55%;
+     /* float: right; */
+    /* margin: 20px;
+    padding: 10px;
+    text-align: right;
+    position: absolute;
+    vertical-align: 5px; */
+  }
+
+
+  #photo1 {
+    max-width: 500%;
+    float: left;
+     size: 8%;
+    padding-left: 2%;
+    margin-top: 1.5%;
+  }
+
+  #topten ol {
+    padding-left: 23%;
   }
 
   #topten li {
-    font-size: 60 em;
     color: #FFFFFF;
-    inline-size: 22em;
+    float: left;
+    font-size: 170%;
+    margin-right: 9%;
+    margin-left: 1%;
+    inline-size: 22%;
+    /* vertical-align: auto; */
+    flex: auto;
+    justify-content: space-evenly;
   }
 
   #topten h3 {
     color:#FFFFFF ;
-
+    float: left;
+    margin-left: 1%;
+    margin-top: 17%;
+    padding-top: 15%;
+    font-size: 160%;
   }
 
-  #education li{
+  #photo2 {
+    float: right;
+    margin-top: 38%;
+    max-width: 35%;
+    size: 55%;
+    padding-right: 2%;
+    margin-bottom: 10%;
+  }
+
+  /* #education {
     color: #FFFFFF;
+    float: right;
+    font-size: 150%;
+    margin-top: 25%;
+  } */
+
+  #education h4 {
+    color: #FFFFFF;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 26%;
+    /* margin-left: 7%; */
+    /* padding-left: 3%; */
+    font-size: 150%;
+    /* padding-top: 27%; */
+    border-style: solid;
+    /* margin-right: 22%;
+    text-transform: uppercase; */
   }
 
-  #education h4{
-    color: #FFFFFF;
+  #education ul {
+
+    font-style: #FFFFFF;
+    /* border-style: solid; */
+    margin-left: 22%;
+    width: 70%;
+    font-size: 150%;
+    border-style: solid;
   }
 
-  #workhistory li{
-    color: #FFFFFF;
+  #photo3 {
+    size: 25%;
+    max-height: 90%;
+    margin-left: 2%;
+    /* margin-top: 3%; */
+    margin-top: 30%;
   }
 
-  #workhistory h4{
+  /* #education ul {
+    /* /* color: #FFFFFF; */
+    /* inline-size: 35%; */
+    /* block-size: 25%; */
+    /* margin-bottom: 26%; */
+     /* margin-right: 18%; 
+    font-size: 60%; 
+    margin-bottom: 55%; */
+  
+
+  /* #ww li {
     color: #FFFFFF;
+    margin-bottom: 25%;
+    font-size: 100%;
+    float: right;
+  } */
+
+  #workhistory h4 {
+    color: #FFFFFF;
+    margin-top: 32%;
+    float: left;
+    text-transform: uppercase;
+    font-size: 170%;
+    padding-left: 5%;
   }
+
+  #photo4 {
+    margin-top: 12%;
+    width: 55%;
+    size: 22%;
+    float: right;
+  }
+
+  #workhistory ul {
+    /* border-style: solid; */
+    color: #FFFFFF;
+    float: left;
+    font-size:140%;
+    /* margin-bottom: % ; */
+    padding-left: 2%;
+    /* justify-content: left; */
+    /* margin-right: 65%; */
+
+  }
+
+

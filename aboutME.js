@@ -1,20 +1,27 @@
 'use strict;'
 
+let userName = getUserName();
+
 function getUserName() {
   // prompts user for userName and introduces user to site 
-  let userName = prompt('Hafa Adai, What is your name?')
+  let userName2 = prompt('Hafa Adai, What is your name?')
   //  console.log('Great to meet you '+ userName)
-  while (userName === '' || userName === null) {
-    alert('Is that really your name?')
-  }
-  return userName
+  if (userName2 === '' || userName2 === null) {
+    alert('Is that really your name?');
+    getUserName();
+  } 
+  return userName2
 }
 
+// calls welcomeUsername
+welcomeUserName();
 
+// welcomes user
 function welcomeUserName() {
-  alert(`Welcome to Me ${userNameName}!`);
+  alert(`Welcome to the Life of Q ${userName}!`);
 }
 
+// alert for strange input in 1st question game
 function thatsWeird() {
   alert('Thats a weird response??');
 }
@@ -22,69 +29,141 @@ function thatsWeird() {
 // alert to begin guessing game
 alert('Before you learn more about me, I have prepared a little guessing game to allow for some fun. Please answer Yes or No to the following questions');
 
+
+// Calls questions game
+userQuestions();
+
+
 function userQuestions() {
   // 1st Question
   let island = prompt('Am I from Guam?');
-  if (island === 'yes' || island === 'Yes') {
+  switch (island) {
+    case 'yes':
     alert('Wow! How did you know that?');
-    // console.log('Guam will always have my heart!');
-  }
-  if (island === 'no' || island === 'No') {
-    alert('Ahhhh better luck next time!')
-  } else {
+    break;
+    case 'Yes':
+    alert('Wow! How did you know that?');
+    break;
+    case 'no':
+    alert('But I am from Guam :/');
+    break;
+    case 'No':
+    alert('But I am from Guam :/');
+    break;
+    case '':
     thatsWeird();
+    break;
+    case null:
+    thatsWeird();
+    break;
   }
-
+ 
   // 2nd Question
   let degree = prompt('Did I study business?');
-  if (degree === 'no' || degree === 'No') {
-    alert('Yup, I could never.');
-    // console.log('Business is not for everyone');
-  } else {
-    alert('Wow, I appreciate that you think that');
+  switch (degree) {
+    case 'yes':
+    alert('Wow! How did you know that?');
+    break;
+    case 'Yes':
+    alert('Wow! How did you know that?');
+    break;
+    case 'no':
+    alert('But I am from Guam :/');
+    break;
+    case 'No':
+    alert('But I am from Guam :/');
+    break;
+    case '':
+    thatsWeird();
+    break;
+    case null:
+    thatsWeird();
+    break;
   }
+
 
   // 3rd Question
   let profession = prompt('Was I a personal trainer?');
-  if (profession === 'yes' || profession === 'Yes') {
+  switch (profession) {
+    case 'yes':
     alert('You rock! I love me some good exercise');
-    // console.log('Being a personal trainer was a lot of fun')
-  } else {
+    break;
+    case 'Yes':
+    alert('You rock! I love me some good exercise');
+    break;
+    case 'no':
     alert('But I love me some exercise though :/');
+    break;
+    case 'No':
+    alert('But I love me some exercise though :/');
+    break;
+    case '':
+    thatsWeird();
+    break;
+    case null:
+    thatsWeird();
+    break;
   }
 
   // 4th Question
   let sibling = prompt('Do I have a sister?');
-  if (sibling === 'yes' || sibling === 'Yes') {
+  switch (sibling) {
+    case 'yes':
     alert('She is still the one that bullies me til this day.');
-    // console.log('Its love/hate relationship with us two')
-  } else {
+    break;
+    case 'Yes':
+    alert('She is still the one that bullies me til this day.');
+    break;
+    case 'no':
     alert('I mean you could not have known that');
+    break;
+    case 'No':
+    alert('I mean you could not have known that');
+    break;
+    case '':
+    thatsWeird();
+    break;
+    case null:
+    thatsWeird();
+    break;
   }
 
   // 5th Question
   let team = prompt('Am I Lakers fan?');
-  if (team === 'no' || team === 'No') {
+  switch (team) {
+    case 'yes':
     alert('That is right! Clippers fan for life!');
-    // console.log('Lakers are the worst smh')
-  } else {
+    break;
+    case 'Yes':
+    alert('That is right! Clippers fan for life!');
+    break;
+    case 'no':
     alert('Sheesh you do not know me, do you?');
+    break;
+    case 'No':
+    alert('Sheesh you do not know me, do you?');
+    break;
+    case '':
+    thatsWeird();
+    break;
+    case null:
+    thatsWeird();
+    break;
   }
 
-}
 
 // Guess number game
 
 let gameAnswer = prompt('Would you like to play a number guessing game with me?');
-if (gameAnswer.toLowerCase() == 'yes') {
-  guess()
-} else {
-  alert('Ahhh that is alright! Enjoy the site ' + userNameName + '!');
+  if (gameAnswer == 'yes' || gameAnswer === 'Yes') {
+    guess()
+  } else {
+    alert('Ahhh that is alright ' + userName);
+  }
 
-}
 
 function guess() {
-  let correctAnswer = 55
+  let correctAnswer = Math.floor((Math.random() * 100) + 1);
   let userGuess = prompt('Please enter a number 1-100');
   let numberOfGuesses = 3;
   for (let i = 0; i < numberOfGuesses; i++) {
@@ -100,14 +179,14 @@ function guess() {
       break;
     }
   } if (userGuess == correctAnswer) {
-    alert('Great Job ' + userName + '! ');
+    alert('Great Job ' + userName2 + '! ');
   } else {
-    alert('Its okay! The correct answer was 55!');
+    alert('Its okay! The correct answer was ' + correctAnswer);
   }
 }
 
 // Guessing game for travel destinations
-alert('But wait! The fun does not stop quite just yet! I have one more guessing game for you!');
+alert('I have one more game before you can go');
 
 // Array for travel destinations 
 
@@ -125,7 +204,10 @@ let correctTravelGuess = false;
 
 // Loop for the guesses
 
-function finalQuestion() {
+
+finalQuestions();
+
+function finalQuestions() {
   while (travelGuesses > 0 && correctTravelGuess === false) {
     let travelGuess = prompt('What is one of my dream travel destination spots?');
     travelGuesses--;
@@ -145,57 +227,8 @@ function finalQuestion() {
     if (correctTravelGuess === false) {
       alert('Sorry but that not is not the right answer');
     }
-
+    
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-// function guessAnswer(){
-//   let correctAnswer = 45
-//       let userGuess = prompt('Please enter a number 1-100');
-//       let numberOfGuesses = 6;
-//       for(let i = 0; i < numberOfGuesses; i++) {
-//           let guessLeft = numberOfGuesses - i;
-//            if(userGuess < correctAnswer){
-//                userGuess = prompt(guessLeft + ' Guesses left. To Low. Please enter a number 1-100')
-//            } else if (userGuess > correctAnswer) {
-//                userGuess = prompt(guessLeft + ' Guesses left. To High! Please enter a number 1-100');
-//            }
-//           if (userGuess == correctAnswer){
-//                alert('You are too good '+ userName);
-//                break;}
-//            }
-//   }
-
-
-// alert('Thanks for playing '+ userName + '! ' + 'I hope you enjoy the site!' )
-
-
-
-
-
-
-// if (island === 'Guam'|| island === 'guam'){
-//   alert('Aye! Great Job '+ userName)
-// } else {
-//   alert('Its alright! Try Again!')
-// }
-
-
-// let profession = prompt('What did I do before Code Fellows?, )
-
-
-// let degree = prompt('What did I get my degree in?')
-
-// let userNameName = getUserName();
-
-// welcomeUserName();
+}
