@@ -94,37 +94,61 @@ header {
 
   #education h4 {
     color: #FFFFFF;
+    margin-top: 32%;
     float: right;
     text-transform: uppercase;
-    margin-top: 26%;
-    /* margin-left: 7%; */
-    /* padding-left: 3%; */
+    text-align: center;
+    font-size: 170%;
+    padding-left: 7%;
+    margin-bottom: -8px;
+    /* color: #FFFFFF;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 22%;
     font-size: 150%;
     /* padding-top: 27%; */
-    border-style: solid;
+    /* border-style: solid; */
     /* margin-right: 22%;
     text-transform: uppercase; */
-  }
+  } 
 
   #education ul {
-
-    font-style: #FFFFFF;
+    color: #FFFFFF;
+    float: right;
+    font-size:140%;
+    margin-bottom: 12%;
+    padding-left: 2%;
+    margin-top: -10px;
+    /* font-style: #FFFFFF;
+    float: right;
     /* border-style: solid; */
-    margin-left: 22%;
-    width: 70%;
-    font-size: 150%;
-    border-style: solid;
+    /* justify-content: center;
+    margin-left: 26%; */
+    /* padding-left: 20%; */
+    /* margin-bottom: 12%%;
+    width: 55%;
+    font-size: 130%;
+    border-style: solid; */ 
   }
 
   #photo3 {
-    size: 25%;
+    size: 20%;
     max-height: 90%;
     margin-left: 2%;
+    max-width: 40%;
     /* margin-top: 3%; */
-    margin-top: 30%;
+    margin-top: 25%;
   }
 
   /* #education ul {
+     /* border-style: solid; */
+     /* color: #FFFFFF;
+     float: left;
+     font-size:140%;
+     /* margin-bottom: % ; */
+     /* padding-left: 2%; */ 
+     /* justify-content: left; */
+     /* margin-right: 65%; */
     /* /* color: #FFFFFF; */
     /* inline-size: 35%; */
     /* block-size: 25%; */
@@ -155,6 +179,7 @@ header {
     width: 55%;
     size: 22%;
     float: right;
+    padding-right: 2%;
   }
 
   #workhistory ul {
